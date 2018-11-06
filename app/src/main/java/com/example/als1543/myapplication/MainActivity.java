@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         zombieCount.setText("170");
 
         goToMissions();
+        goToHelpAlert();
     }
 
     public void goToMissions() {
@@ -30,6 +31,18 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view)
             {
                 startActivity(new Intent(MainActivity.this, Missions.class));
+            }
+        });
+    }
+
+    public void goToHelpAlert() {
+        Button toMissions = (Button) findViewById(R.id.toHelpAlertButton);
+        toMissions.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainActivity.this, HelpAlert.class));
             }
         });
     }
