@@ -152,7 +152,7 @@
         app:layout_constraintStart_toStartOf="@+id/textView10" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/SendButton"
         android:layout_width="135dp"
         android:layout_height="83dp"
         android:layout_marginStart="125dp"
